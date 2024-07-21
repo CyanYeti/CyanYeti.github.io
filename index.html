@@ -1,1 +1,82 @@
-<p> Hello! </p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thadeus Ferney</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Thadeus Ferney</h1>
+    <h2>Security Clearnance * Software Engineer * Team Focused</h2>
+    <p>I am a recent Computer Science graduate from Utah State University with a passion for software engineering, data
+        science, and cyber-security. Currently I am looking for my first software engineering position focused in these
+        three areas. During my search I have maintained and expanded my capabilities through working towards self
+        publishing
+        my first game, In-Perpetuum. This
+        has been an excellent practice to create well designed, scalable software. This has also let me work on UI/UX
+        design and work on computer graphics.</p>
+
+    <p>I have worked with several teams through my internships with Hill Air Force Base Software Engineering Group and
+        university. This is highlighted through several projects and papers focused in web development, data science,
+        and
+        game theory.</p>
+
+    <h2>Personal Projects</h2>
+    <h3>Game Development</h3>
+    <h4>In-Perpetuum</h4>
+    <p>In-Perpetuum is an idle focused game with satisfying visuals and audio that invites the player to set back and
+        watch their system make money. This is done using a graph of gears that align and mesh together while charging
+        to be able to pull a symbol for a reward. As the network is made of gears, players are able to change sizes to
+        impact the speed and torque of the systems. These values impact different elements of the game. To create the
+        visuals, several shaders are used to create a Kaleidoscope effect on the gears and an escher like background.
+        This enable the player to stay involved by pulling for spins mindlessly between changes to their gear graphs.
+        Art by Carson Diebold</p>
+    <h4>Eadu: A Gnomes Way Home</h4>
+    <p>Eadu is a simple look into a more traditional 2d platformer. To expand on the genre and learn, it implements a
+        more Splunky style game play, using procedural generation to create each level each time the player starts. </p>
+
+    <h3>Computer Graphics</h3>
+    <p>I have created several shaders using in godot's shader language to create interesting visuals from base images.
+        Godot's shader language is very similar to GLSL and can be converted easily. These shaders apply different
+        transformations to find eachs targets positions. As the math remains the same, these can also be easily
+        converted to screen shaders taking in what ever is in the currenct background. An interesting quirk is the
+        transformations must be done in reverse order as GLSL can only get the pixel information for a point, not set
+        it. So we have to find what point would create the effect at the current position.</p>
+    <h4>Kaleidoscope Shader</h4>
+    <p>A kaleidoscope effect is produced by angling two mirrors towards each other. As the angle gets tighter, more
+        reflections are produced. Depending on the items reflected and the angle, different geometeric patterns are
+        produced. At large angles it is easy to see the item used and creates larger patterns. Tight angles produce
+        fast, circular patterns. These are used in the center of the gears for In-Perpetuum and rotate as the gear is
+        rotated.</p>
+    <h4>Escher Shader</h4>
+    <p>This shader is based on
+        <a href="https://www.youtube.com/watch?v=fjXj6asQSEk&t=166s">this</a> video. We take some of the transformations
+        M.C. Escher frequently used and apply it
+        dynamically to images. This shader allows the user to select the region between two circles, apply a recursive
+        logarithmic spiral, then a steorographic projection. Now as the point is rotated, we are able to have spirals go
+        in and out of each other.
+    <h4>Slice Shader</h4>
+    <p>A simple slice shader intended to use with the kaleidoscope shader. This takes an image and creates a slice
+        transition effect. If the number of slices is equal to the kaleidoscope slices, it can be used to have an image
+        appear cleanly on top of the kaleidoscope effect. This can be used as a tool to create radial loading bars and
+        other effects.</p>
+
+    <h2>University Group Projects</h3>
+        <h3>Web Development</h3>
+        <p>I have worked with many groups of students and software engineers to create various websites and tools. At
+            Hill AFB, we created web tools using React.js to serve all civilian employees. My next internship there
+            focused on creating and maintaining a MS Access tool to track employee documents. While my work at Hill AFB
+            is not avaible, my work can be seen through several university projects</p>
+        <ul>
+            <li><a href="https://github.com/KodingKing99/4th_dimension">github.com</a>A group project to create a
+                complete mini
+                golf food ordering system</li>
+            <li><a href="https://github.com/CyanYeti/Sudoku">github.com</a>Electron Appliction: Sudoku Solver</li>
+            <li><a href="https://github.com/CyanYeti/DrawingOOP">A C# drawing application</a></li>
+        </ul>
+</body>
+
+</html>
